@@ -9,20 +9,12 @@
 
 	<body>
 		<script>
-			$(function () {
-
-            	var btnArr = document.getElementsByTagName("button");
-
-            	$(btnArr[0]).click(function () {
-
-                	$("body").get(0).style.backgroundColor = "";
-            	});
-
-            	$(btnArr[1]).click(function () {
-
-                	$("body")[0].style.backgroundColor = "black";
-            	});
-        	});
+			function Off(){
+				$("body").css("background-color", "white");
+			}
+			function On(){
+				$("body").css("background-color", "black");
+			}
     	</script>
 
 		<style>
@@ -41,6 +33,11 @@
         	border-style: solid;
         }
 
+        .forButton{
+        	border: solid;
+        	border-color: blue;
+        	padding: 10px, 20px;
+        }
 
     	</style>
 
@@ -50,7 +47,7 @@
 		</div>
 
 		<div class="fontMicrosoft">
-			<h3>第三部 星塵遠征軍</h3><button type="button" class="btn btn-primary btn-block">開/關燈</button>
+			<h3>第三部 星塵遠征軍</h3><button type="button" class="forButton btn btn-primary btn-block" onclick="Off();">開/關燈</button><button type="button" class="forButton btn btn-primary btn-block" onclick="On();">開/關燈</button>
 
 			<div style="float: left; margin-left: 150px; margin-right: 80px">
 			<p style="color: purple">空条承太郎(JOJO)</p>
@@ -65,7 +62,7 @@
 			<a href="https://home.gamer.com.tw/creationDetail.php?sn=2360600">
 			<img src="https://i.imgur.com/3xqT3iL.jpg" width="512" height="512"  title="點我看更多~"></a>
 
-			<p style="color: DarkGreen">花京院典明</p>
+			<p style="color: DarkGreen">花京院典明(甜甜圈)</p>
 			<a href="https://wiki.komica.org/%E8%8A%B1%E4%BA%AC%E9%99%A2%E5%85%B8%E6%98%8E">
 			<img src="https://i.imgur.com/05J3g0S.jpg" width="512" height="512"  title="點我看更多~"></a>
 			</div>
