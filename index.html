@@ -9,12 +9,14 @@
 			$(document).ready( function(){
 				$("#tob").click( function(){
 					//$("body").css("backgound-color", "black");
-					$("body").addClass("shine");
+					$("body").addClass("darkBACK");
+					$("#WORD").addClass("lightWORD");
 				});
 
 				$("#tow").click( function(){
 					//$("body").css("backgound-color", "white");
-					$("body").removeClass("shine");
+					$("body").removeClass("darkBACK");
+					$("#WORD").removeClass("lightWORD");
 				});
 			});
     	</script>
@@ -49,51 +51,62 @@
         	padding: 10px, 20px;
         }
 
-        .shine{
+        .darkBACK{
         	background-color: black;
+        }
+
+        .lightWORD{
+        	color: white;
         }
 
     	</style>
 
     	<div class = "fontFantasy">
-			<h1 align="center">Hello ! Here is Doge's Blog</h1>
-			<h2 align="center">Welcome to see THE JOJO!</h2>
+			<h1 align="center" id="WORD">Hello ! Here is Doge's Blog</h1>
+			<h2 align="center" id="WORD">Welcome to see THE JOJO!</h2>
 		</div>
 
 		<div class="fontMicrosoft">
-			<h3>第三部 星塵遠征軍</h3><button type="button" id ="tob" class="forButton btn btn-block btn-primary"><i class="far fa-lightbulb"></i> 關燈</button>
-			<button type="button" id = "tow" class="forButton btn btn-block btn-primary"> 開燈</button>
+			<h3 id="WORD">第三部 星塵遠征軍</h3>
+			<div style="text-align:right;"><h3>點我看替身</h3></div>
+			<button type="button" id ="tob" class="forButton btn btn-block btn-primary">
+				<i class="far fa-lightbulb"></i>
+				<span style="font-weight:bold;"> 關燈</span>
+			</button>
+			<button type="button" id = "tow" class="forButton btn btn-block btn-primary">
+				<span style="font-weight:bold;"> 開燈</span>
+			</button>
 
 			<div style="float: left; margin-left: 150px; margin-right: 80px">
-			<p style="color: purple">空条承太郎(JOJO)</p>
+			<p style="color: purple"><span style="font-weight:bold;">空条承太郎(JOJO)</span></p>
 			<a href="https://wiki.komica.org/%E7%A9%BA%E6%A2%9D%E6%89%BF%E5%A4%AA%E9%83%8E">
 			<img src="https://i.imgur.com/JVWHbmV.jpg" title="點我看更多~"></a>
 
-			<p style="color: SaddleBrown">喬瑟夫‧喬斯達(年輕Ver.)</p>
+			<p style="color: SaddleBrown"><span style="font-weight:bold;">喬瑟夫‧喬斯達(年輕Ver.)</span></p>
 			<a href="https://wiki.komica.org/%E5%96%AC%E7%91%9F%E5%A4%AB%E2%80%A7%E5%96%AC%E6%96%AF%E9%81%94">
 			<img src="https://i.imgur.com/sdZO8Aj.png" width="512" height="512"  title="點我看更多~"></a>
 
-			<p style="color: Brown">穆罕默德．阿布德爾(阿布嘟嘟)</p>
+			<p style="color: Brown"><span style="font-weight:bold;">穆罕默德．阿布德爾(阿布嘟嘟)</span></p>
 			<a href="https://home.gamer.com.tw/creationDetail.php?sn=2360600">
 			<img src="https://i.imgur.com/3xqT3iL.jpg" width="512" height="512"  title="點我看更多~"></a>
 
-			<p style="color: DarkGreen">花京院典明(甜甜圈)</p>
+			<p style="color: DarkGreen"><span style="font-weight:bold;">花京院典明(甜甜圈)</span></p>
 			<a href="https://wiki.komica.org/%E8%8A%B1%E4%BA%AC%E9%99%A2%E5%85%B8%E6%98%8E">
 			<img src="https://i.imgur.com/05J3g0S.jpg" width="512" height="512"  title="點我看更多~"></a>
 			</div>
 
 
 			<div style="float: left; margin-right: 80px">
-			<p style="color: blue">白金之星</p>
+			<p style="color: blue"><span style="font-weight:bold;">白金之星</span></p>
 			<img src="https://i.imgur.com/mhYJ95V.jpg" width="512" height="512">
 
-			<p style="color: purple">隱者之紫/紫色隱者</p>
+			<p style="color: purple"><span style="font-weight:bold;">隱者之紫/紫色隱者</span></p>
 			<img src="https://i.imgur.com/f8biDPf.jpg" width="512" height="512">
 
-			<p style="color: red">紅色魔術師</p>
+			<p style="color: red"><span style="font-weight:bold;">紅色魔術師</span></p>
 			<img src="https://i.imgur.com/Im2UE3v.jpg" width="512" height="512">
 
-			<p style="color: green">綠色法皇</p>
+			<p style="color: green"><span style="font-weight:bold;">綠色法皇</span></p>
 			<img src="https://i.imgur.com/a9KaYHs.jpg" width="512" height="512">
 			</div>
 
