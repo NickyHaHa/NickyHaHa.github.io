@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="//code.jquery.com/jquery-3.5.0.min.js"></script>
 
 		<script type="text/javascript" language="javascript">
@@ -10,13 +10,17 @@
 				$("#tob").click( function(){
 					//$("body").css("backgound-color", "black");
 					$("body").addClass("darkBACK");
-					$("#WORD").addClass("lightWORD");
+					$("#WORD1").addClass("lightWORD");
+					$("#WORD2").addClass("lightWORD");
+					$("#WORD3").addClass("lightWORD");
 				});
 
 				$("#tow").click( function(){
 					//$("body").css("backgound-color", "white");
 					$("body").removeClass("darkBACK");
-					$("#WORD").removeClass("lightWORD");
+					$("#WORD1").removeClass("lightWORD");
+					$("#WORD2").removeClass("lightWORD");
+					$("#WORD3").removeClass("lightWORD");
 				});
 			});
     	</script>
@@ -49,6 +53,7 @@
         	border: solid;
         	border-color: yellow;
         	padding: 10px, 20px;
+        	font-family: Microsoft JhengHei;
         }
 
         .darkBACK{
@@ -62,13 +67,13 @@
     	</style>
 
     	<div class = "fontFantasy">
-			<h1 align="center" id="WORD">Hello ! Here is Doge's Blog</h1>
-			<h2 align="center" id="WORD">Welcome to see THE JOJO!</h2>
+			<h1 align="center" id="WORD1">Hello ! Here is Doge's Blog</h1>
+			<h2 align="center" id="WORD2">Welcome to see THE JOJO!</h2>
 		</div>
 
 		<div class="fontMicrosoft">
-			<h3 id="WORD">第三部 星塵遠征軍</h3>
-			<div style="text-align:right;"><h3>點我看替身</h3></div>
+			<h3 id="WORD3">第三部 星塵遠征軍</h3>
+			<div style="text-align:right;"><h3>點我看替身    </h3></div>
 			<button type="button" id ="tob" class="forButton btn btn-block btn-primary">
 				<i class="far fa-lightbulb"></i>
 				<span style="font-weight:bold;"> 關燈</span>
