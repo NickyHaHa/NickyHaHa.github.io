@@ -9,12 +9,13 @@
 		<script type="text/javascript" language="javascript">
 			$(document).ready(function(){
 				$("#tob").click(function(){
-					$("body").css("backgound-color", "black");
-					console.log("Hi!");
+					//$("body").css("backgound-color", "black");
+					$("body").addClass("shine");
 				});
 
 				$("#tow").click(function(){
-					$("body").css("backgound-color", "white");
+					//$("body").css("backgound-color", "white");
+					$("body").removeClass("shine");
 				});
 			});
     	</script>
@@ -49,6 +50,10 @@
         	padding: 10px, 20px;
         }
 
+        .shine{
+        	background-color: black;
+        }
+
     	</style>
 
     	<div class = "fontFantasy">
@@ -57,7 +62,7 @@
 		</div>
 
 		<div class="fontMicrosoft">
-			<h3>第三部 星塵遠征軍</h3><button type="button" id ="tob" ><i class="far fa-lightbulb"></i> 開/關燈</button>
+			<h3>第三部 星塵遠征軍</h3><button type="button" id ="tob" class="forButton btn btn-block btn-primary"><i class="far fa-lightbulb"></i> 開/關燈</button>
 			<button type="button" id = "tow">可惡</button>
 
 			<div style="float: left; margin-left: 150px; margin-right: 80px">
